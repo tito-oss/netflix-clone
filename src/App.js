@@ -60,7 +60,7 @@ class NetFlix extends Component {
         
       <div className= "box-geral">
                     
-                  
+               
            
         <header  class="uma-div">
 
@@ -90,6 +90,8 @@ class NetFlix extends Component {
           </div>  
         </header>
 
+        <div class="titulo">Filmes</div>   
+        
           <div className= "conteiner">
              {this.state.movies.map((item,index) => (
             <div  className="box_content"  key= {index}>
@@ -109,7 +111,7 @@ class NetFlix extends Component {
            ))}
           </div>
 
-          
+          <div class="titulo">Séries</div>  
 
             <div className= "conteiner">
               {this.state.shows.map((item,index) => (

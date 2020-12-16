@@ -10,6 +10,13 @@
   }
   
 
+  .titulo {
+    color: rgb(255, 255, 255);
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: serif ;
+  }
+
   .uma-div {
     position: relative;
     width: 104%;
