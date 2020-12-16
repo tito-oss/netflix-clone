@@ -12,6 +12,7 @@ class NetFlix extends Component {
     shows: [],
     
   }
+  
 
   async componentDidMount(){
 
@@ -54,12 +55,17 @@ class NetFlix extends Component {
 
   render() {
     return ( 
-
      
+      
         
       <div className= "box-geral">
+                    
+                  
+           
+        <header  class="uma-div">
 
-        <header>
+
+        
           <div class="center">
             <div class="header-left">
             <a href=""><img src="https://img.icons8.com/ios/452/netflix.png" /></a>
@@ -87,6 +93,7 @@ class NetFlix extends Component {
           <div className= "conteiner">
              {this.state.movies.map((item,index) => (
             <div  className="box_content"  key= {index}>
+
               <p  className="netflixTitles">{item.title}</p>
               <div class= "box-descricao">
               <p className= "let">{item.overview}</p>
@@ -101,6 +108,9 @@ class NetFlix extends Component {
              
            ))}
           </div>
+
+          
+
             <div className= "conteiner">
               {this.state.shows.map((item,index) => (
              <div className="box_content" key={index}>
